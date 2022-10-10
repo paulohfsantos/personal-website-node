@@ -1,5 +1,7 @@
-export interface IPerson {
+import { Model } from "sequelize"
+export interface IPerson extends Model {
   user: {
+    id: number,
     name: string,
     email: string,
     about: string,
@@ -11,7 +13,7 @@ export interface IPerson {
 }
 
 export type Links = {
-  name: string,
+  name: string
   url: string
 }
 
@@ -32,12 +34,12 @@ export type Skills = "HTML5"
   | "Android"
 
 export type Experience = {
-  company: string,
-  city: string,
-  country: string,
-  position: string,
-  start: string,
-  end: string,
+  company: string
+  city: string
+  country: string
+  position: string
+  start: string
+  end: string
   description: string
 }
 
