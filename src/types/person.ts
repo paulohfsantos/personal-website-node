@@ -5,7 +5,8 @@ export interface IPerson {
     about: string,
     links: Links[],
     skills: Partial<Skills[]>,
-    experience: Experience[]
+    experience: Experience[],
+    projects: Projects[]
   }
 }
 
